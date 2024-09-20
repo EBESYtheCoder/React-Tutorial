@@ -8,8 +8,11 @@ function App() {
   return (
     <>
       <h1 className='text-3xl bg-green-500 p-3 rounded-md'
-      >Vite with Tailwind</h1>
-      <Card />
+      >Vite with Tailwind </h1>
+      <Card username="Ebenezer" />
+      <Card username="Bryan" url='https://tailwindcss.com/_next/static/media/sarah-dayan.de9b3815.jpg' />
+      <Card username="Thamas" post="Staff Engineer" />
+
     </>
   )
 }
