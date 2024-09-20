@@ -19,21 +19,6 @@ const areactElement = React.createElement(
 )
 */
 
-
-
-const AnotherElement = (
-  <a href="https://google.com" target='_blank'>Visit google</a>
-)
-
-
-function MyApp() {
-  return (
-    <div>
-      <h1>Custom React app</h1>
-    </div>
-  )
-}
-
 createRoot(document.getElementById('root')).render(
-  AnotherElement
+  <App />
 )
