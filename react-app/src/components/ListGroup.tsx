@@ -7,12 +7,9 @@ interface Props {
   heading: string;
 }
 
-function ListGroup(props: Props) {
-  let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
-
+function ListGroup({ items, heading }: Props) {
   // Hook
   const [selectedIndex, setSelectedIndex] = useState(-1);
-
 
   // items = [];
   // const message = items.length === 0 ? <p>No item found</p> : null;
@@ -23,7 +20,7 @@ function ListGroup(props: Props) {
 
   return (
     <>
-      <h1>List</h1>
+      <h1>{heading}</h1>
       {/* {items.length === 0 ? <p>No item found</p> : null} */}
       {items.length === 0 && <p>No item found</p>}
       <ul className="list-group">
