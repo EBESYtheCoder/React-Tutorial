@@ -55,7 +55,7 @@ export const Todo = () => {
       {/* input Box */}
       <div className="bg-gray-200 rounded-full flex ">
         <input
-          placeholder="Office table"
+          placeholder="buy the whole world for my mama"
           type="text"
           ref={inputRef}
           className="rounded-full h-12 w-80 flex-1 placeholder:text-lg bg-transparent border-0 outline-none placeholder:text-slate-600 pl-6 pr-2"
