@@ -1,14 +1,11 @@
-import Youtube from "./Youtube"
+import { Todo } from "./components/Todo";
 
 function App() {
   return (
-    <>
-      <h1>Vite react app </h1>
-      <h1>Vite react app </h1>
-      <Youtube />
-    </>
-
-  )
+    <div className="bg-stone-900 grid min-h-screen">
+      <Todo />
+    </div>
+  );
 }
 
-export default App
+export default App;
