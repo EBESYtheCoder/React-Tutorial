@@ -4,7 +4,11 @@ import { Items } from "./items";
 
 export const Todo = () => {
   const inputRef = useRef();
-  const [shopList, setShopList] = useState([]);
+  const [shopList, setShopList] = useState(
+    localStorage.getItem("itemss")
+      ? JSON.parse(localStorage.getItem("itemss"))
+      : []
+  );
 
   const add = () => {
     const inputText = inputRef.current.value.trim();
@@ -37,7 +41,9 @@ export const Todo = () => {
       });
     });
   };
-  useEffect(() => {}, [shopList]);
+  useEffect(() => {
+    localStorage.setItem("itemss", JSON.stringify(shopList));
+  }, [shopList]);
 
   return (
     <div className="bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-[550px] rounded-xl">
